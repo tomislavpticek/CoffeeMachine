@@ -109,6 +109,7 @@ if __name__ == '__main__':
                 print_report(resources)
             elif beverage_input == "shutdown":
                 run = False
+                print("Shutting down...")
                 break
             else:
                 try:

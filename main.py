@@ -14,7 +14,7 @@ def refund(money):
     print(f"\nApologies, not enough money to buy the selected product. ${round(money, 2)} has been refunded.")
 
 
-def refund_ingredients(money):
+def refund_ingredients_shortage(money):
     print(f"\n${round(money, 2)} has been refunded.")
 
 
@@ -66,7 +66,7 @@ def enough_resources(beverage_name, resource_list, money, product):
         for ingredient in missing:
             print(f"[{ingredient}] ", end="")
 
-        refund_ingredients(money)
+        refund_ingredients_shortage(money)
     return sufficient_resources
 
 
